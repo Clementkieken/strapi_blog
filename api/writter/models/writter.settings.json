@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Writter",
+  "info": {
+    "name": "Writter",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "default": "Name",
+      "required": true
+    },
+    "Avatar": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "author": {
+      "collection": "article",
+      "via": "writter"
+    }
+  }
+}
