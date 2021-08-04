@@ -12,15 +12,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Tag": {
+    "name": {
       "type": "string",
       "default": "Tag",
       "required": true
     },
-    "tags": {
-      "via": "category",
-      "collection": "article",
-      "dominant": true
+    "articles": {
+      "via": "categories",
+      "collection": "article"
     }
   }
 }

@@ -29,8 +29,8 @@
       "pluginOptions": {}
     },
     "author": {
-      "collection": "article",
-      "via": "writter"
+      "via": "writter",
+      "collection": "article"
     }
   }
 }
